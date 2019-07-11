@@ -315,15 +315,15 @@
 					<div class="col-md-6  col-sm-6 col-xs-6 work-right1">
 						<h4>🖥实习项目一</h4>
 						<p><b>🌵项目一：</b>2019年4月~2019年6月 香港国泰航空在线支付系统（Centralized Payment Platform）</br>
-							<b>🌵项目技术：</b>基于微服务架构采用Springboot框架技术并采用Restful风格对不同种支付方式的API进行开发，并使用Jpa,SpringSecurity,redis,基于Jwt的Token验证,spring-retry,FlyWay,Swagger,logstash日志等技术来实现不同的业务逻辑。</br>
+							<b>🌵项目技术：</b>基于微服务架构采用Springboot框架技术并采用Restful风格对不同种支付方式的API进行开发，并使用Jpa,SpringSecurity,redis,基于Jwt的Token验证,spring-retry</br>FlyWay,Swagger,logstash日志等技术来实现不同的业务逻辑。</br>
 							<b>🌵开发工具：</b>mysql,postman,idea,Git</br>Jenkins,kibana,OpenShit,SourceTree,katalon,Jmeter。</br>
-							<b>🌵项目描述：</b>该项目是服务于香港国泰航空公司，主要包括Alipay,PayPal,PPS（缴费宝）,ApplePay,UnionPay等第三方支付，以及JBC,Visa,Discover,UATP等各地的银行卡支付。</br>
-							<b>🌵功能流程如下：</b></br>（1）用户通过国泰航空官网进行订票，或者是购买配套服务以及旅游礼物等，然后通过该系统进行线上支付。</br>
+							<b>🌵项目描述：</b>该项目是服务于香港国泰航空公司，主要包括Alipay</br>PayPal,PPS（缴费宝）,ApplePay,UnionPay等第三方支付，以及JBC,Visa,Discover,UATP等各地的银行卡支付。</br>
+							<b>🌵功能流程如下：</b>（1）用户通过国泰航空官网进行订票，或者是购买配套服务以及旅游礼物等，然后通过该系统进行线上支付。</br>
 							（2）用户通过手机联系国泰航空客服进行相同的业务选购之后，客服系统会回复一封用户应该支付的支付清单链接，用户通过该链接来请求该支付系统并进行相应的支付动作。</br>
 							<b>🌵职责描述：</b>与项目中的同事一起完成支付校验api的实现，通过Hibernate Validate技术与java的正则表达式的方式对字段进行校验，并且数据进行RSA加密解密等处理。最后实现用户在成功支付后收到类似支付成功的消息，支付失败后收到支付失败的消息。</br>
 							<b>🌵重要问题与解决方法描述：</b></br><b>问题：</b>（1）数据加密之后的公钥，与私钥的问题。</br>（2）支付校验微服务请求其他微服务的URL拼接问题</br>
-							<b>🌵原因:</b></br>（1）因为公钥是其他微服务生成请求body时提供的，需要使用自己的私钥进行解密然后进行过相应的校验处理。</br>（2）在进行访问客户端处理时请求的URL实际上是请求其他微服务并且得到相应的数据，但是无法得到该URL的实际参数。</br>
-							<b>🌵解决方法：</b></br>（1）通过自己实现一个方法，实现别人的公钥加密，使用自己的私钥解密方法，并且能够得到正确的请求数据body。</br>（2）将另一个微服务的请求域名，端口等参数信息配置成支付校验服务的一个环境变量，然后通过读取环境变量方式来获取请求URL的参数。
+							<b>🌵原因:</b>（1）因为公钥是其他微服务生成请求body时提供的，需要使用自己的私钥进行解密然后进行过相应的校验处理。</br>（2）在进行访问客户端处理时请求的URL实际上是请求其他微服务并且得到相应的数据，但是无法得到该URL的实际参数。</br>
+							<b>🌵解决方法：</b>（1）通过自己实现一个方法，实现别人的公钥加密，使用自己的私钥解密方法，并且能够得到正确的请求数据body。</br>（2）将另一个微服务的请求域名，端口等参数信息配置成支付校验服务的一个环境变量，然后通过读取环境变量方式来获取请求URL的参数。
 						</p></div>
 				</div>
 				<div class="clearfix"> </div>
@@ -338,8 +338,8 @@
 						<p style="text-align:left;">
 							<b>🍀项目一：</b>2017年3月 基于微信公众号的校园服务平台</br>
 							<b>🍀项目框架：</b>基于JavaEE 的SSM框架，基于java的微信公众号开发者模式开发，基于百度地图API的开发。</br>
-							<b>🍀开发工具：</b>eclipse,mysql,Axure,sublime_text,tomcat7,阿里云Linux系统下的java运行环境服务器。</br>
-							<b>🍀前端技术：</b>BootStrap,jQuery,JavaScript,Html5,CSS3。</br>
+							<b>🍀开发工具：</b>eclipse,mysql</br>Axure,sublime_text,tomcat7,阿里云Linux系统下的java运行环境服务器。</br>
+							<b>🍀前端技术：</b>BootStrap,jQuery</br>JavaScript,Html5,CSS3。</br>
 							<b>🍀项目描述：</b>该平台主要实现了不同用户通过关注个人开发公众号来使用该服务平台，系统管理员通过平添的管理后台来对系统内的信息进行管理，该平台主要实现了校园内不同时间段空教室查询，校园公交查询，以及校园内各种资讯的发布。</br>
 							<b>🍀职责描述：</b>个人项目，前端+后台均由个人在课余时间完成。</br>
 							<b>🍀重要问题与解决方法描述：</b></br><b>问题：</b>在实现基于java开发的校园服务公众号与开发并发布到阿里云服务器上的后台进行数据交互的时候出现了网络不通的问题。从而我开发的微信公众号无法与阿里云服务器上的后台在同一网络中进行数据交互。</br>
@@ -364,7 +364,7 @@
 						<h4>🖥实习项目二</h4>
 						<p><b>🌴项目二：</b>2019年3月~2019年4月 支付系统的线下支付邮件系统（Offline Payment Engine）</br>
 							<b>🌴项目框架：</b>基于微服务架构采用Springboot框架技术并采用Restful风格对API进行开发。</br>
-							<b>🌴开发工具：</b>mysql,postman,idea</br>Jenkins,kibana,OpenShit,Git,SourceTree。</br>
+							<b>🌴开发工具：</b>mysql,postman,Git,idea</br>Jenkins,kibana,OpenShit,SourceTree。</br>
 							<b>🌴项目描述：</b>该项目是服务于香港国泰航空公司，功能流程为用户通过电话与客服沟通进行订票，再确认支付时客服通过该系统查询Api查询到用户需要支付的业务清单，
 							然后通过邮件生成功能向用户发送一封含有支付链接的邮件，用户通过该链接可以请求支付系统进行支付！<b>注意：</b>此支付链接是有时间限制的，一般可以设置为12小时或者24小时，邮件会根据不同国家地区的用户设置为不同的语言。</br>
 							<b>🌴职责描述：</b>通过对项目源码的学习，理清各个微服务之间的联系，然后根据自己的理解在Controller层和service层书写每个模块的单元测试用例！通过单元测试用例的返回结果，找出问题。</br>
