@@ -18,8 +18,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resume.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="311" column="38" lean-forward="true" selection-start-line="311" selection-start-column="38" selection-end-line="311" selection-end-column="38" />
+            <state relative-caret-position="229">
+              <caret line="310" column="66" lean-forward="true" selection-start-line="310" selection-start-column="66" selection-end-line="310" selection-end-column="66" />
             </state>
           </provider>
         </entry>
@@ -131,12 +131,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1598271577038</updated>
-      <workItem from="1598271580338" duration="7000000" />
+      <workItem from="1598271580338" duration="7341000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7000000" />
+    <option name="totallyTimeSpent" value="7341000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
@@ -217,13 +217,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/Project/FrontEnd/Resume Online/interduce/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="209" column="38" lean-forward="true" selection-start-line="209" selection-start-column="38" selection-end-line="209" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/bootstrap.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-513">
@@ -247,10 +240,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://D:/Project/FrontEnd/Resume Online/interduce/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="220" column="14" lean-forward="true" selection-start-line="220" selection-start-column="14" selection-end-line="220" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resume.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="311" column="38" lean-forward="true" selection-start-line="311" selection-start-column="38" selection-end-line="311" selection-end-column="38" />
+        <state relative-caret-position="229">
+          <caret line="310" column="66" lean-forward="true" selection-start-line="310" selection-start-column="66" selection-end-line="310" selection-end-column="66" />
         </state>
       </provider>
     </entry>
