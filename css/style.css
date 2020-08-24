@@ -667,15 +667,15 @@ span.edu-circle {
 .work1 {
     border: 1px dashed #171717;
     padding: 1em 2em;
-	width: 60%;
+	width: 100%;
 }
 .work2 {
 	width:40%;
 }
 .work-right1 {
     border: 1px dashed #171717;
-    padding: 1em 2em;
-    width: 60%;
+    padding: 1em;
+    width: 100%;
 }
 .work1 p,.work-right1 p {
     color: #000;
