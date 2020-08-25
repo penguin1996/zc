@@ -187,7 +187,8 @@
     </nav>
 </div>
 <!-- //header -->
-<div class="header jarallax" id="home" style="/* background-image: none; */background-attachment: scroll;/* background-size: auto; */">
+<div class="header jarallax" id="home"
+     style="/* background-image: none; */background-attachment: scroll;/* background-size: auto; */">
     <div class="container">
         <div class="banner-text text-center">
             <h2>✨周丞~Richie✨</h2>
@@ -215,7 +216,7 @@
                     🏢公司：埃森哲(中国)有限公司广州分公司</br>
                     ⌚工作时间：2019.1~2020.6 (2019.1~2019.6实习) 超过一年</br>
                     ⌨工作岗位：Java开发工程师
-                    </p></div>
+                </p></div>
             <div class="w3l-button">
                 <a href="#" data-toggle="modal" data-target="#myModal">👦🏻自我介绍👈(Click)</a>
             </div>
@@ -438,7 +439,8 @@
                         <b>🌵项目描述：</b>该项目主要包括Alipay,PayPal,PPS(缴费宝),ApplePay,UnionPay等第三方支付，以及JBC,Visa,Discover,UATP等各地的银行卡支付。</br>
                         <b>🌵功能流程如下：</b>（1）用户通过购票官网进行订票，或者是购买配套服务以及旅游礼物等，然后通过该系统进行线上支付。</br>
                         🌵（2）用户通过手机联系购票公司的电话客服进行相同的业务选购之后，客服系统会回复一封用户应该支付的支付清单链接，用户通过该链接来请求该支付系统并进行相应的支付动作。</br>
-                        <b>🌵职责描述：</b>(1)与项目中的同事一起完成支付校验api的实现，通过Hibernate Validate技术与java的正则表达式的方式对字段进行校验，并且对数据进行RSA加密解密等处理。最后实现用户在成功支付后收到类似支付成功的消息，支付失败后收到支付失败的消息。</br>
+                        <b>🌵职责描述：</b>(1)与项目中的同事一起完成支付校验api的实现，通过Hibernate
+                        Validate技术与java的正则表达式的方式对字段进行校验，并且对数据进行RSA加密解密等处理。最后实现用户在成功支付后收到类似支付成功的消息，支付失败后收到支付失败的消息。</br>
                         🌵(2)使用Katalon功能测试软件，利用Groovy语言编写自动化脚本，对不同的支付功能进行本地测试。</br>
                         <b>🌵重要问题与解决方法描述：</b></br>🌵<b>问题：</b>（1）数据加密之后的公钥，与私钥的问题。</br>（2）支付校验微服务请求其他微服务的URL拼接问题。</br>
                         <b>🌵原因：</b>（1）因为公钥是其他微服务生成请求body时提供的，需要使用自己的私钥进行解密然后进行过相应的校验处理。</br>
@@ -456,7 +458,7 @@
                     <h5>💻工作项目一</h5>
                 </div>
                 <div class="col-md-6  col-sm-6 col-xs-6 work-right1">
-                     <p>🌳<b>项目：</b>2019年7月~2019年11月 用户登录控制项目（Member Login Control）</br>
+                    <p>🌳<b>项目：</b>2019年7月~2019年11月 用户登录控制项目（Member Login Control）</br>
                         🌳<b>项目技术：</b>Springboot,Jpa,MySQL,SpringSecurity,redis,Maven,Junit,基于Jwt的Token验证。</br>
                         🌳<b>开发工具：</b>postman,idea,Git,Jenkins,kibana,OpenShit。</br>
                         🌳<b>项目描述：</b>该项目主要实现的是用户登录控制功能</br>
@@ -478,7 +480,8 @@
                 </div>
                 <div class="col-md-6  col-sm-6 col-xs-6 work-right1">
                     <p>🌿<b>项目：</b>2019年12月~2019年6月 区块链用户积分项目（BlockChain）</br>
-                        🌿<b>项目技术：</b>Springboot,Java,HyperLedger Fabric,CouchDB,MongoDB,Shell,Docker,Gradle,Hiberate Validate。</br>
+                        🌿<b>项目技术：</b>Springboot,Java,HyperLedger Fabric,CouchDB,MongoDB,Shell,Docker,Gradle,Hiberate
+                        Validate。</br>
                         🌿<b>开发工具：</b>idea,postman,Git,Ubuntu,Putty。</br>
                         🌿<b>项目描述：</b>项目会根据用户在商场内的消费额度来计算积分，而且在不同的商场内同一部分积分只能被兑换一次，且被兑换后的内容会被记录并。</br>
                         🌿<b>功能流程如下：</b>（1）商场通过客户端发起一个积分兑换的活动并提交到后台系统，后台系统进行处理之后会将该请求封装处理成符合Fabric请求格式的数据发送给
@@ -488,7 +491,8 @@
                         🌿<b>职责描述：</b>(1)搭建区块链网络，并实现智能合约中某些方法，并进行测试。</br>
                         🌿(2)基于TDD开发模式，实现用户和商场交互后台业务，对他们提交的数据进行校验，以及自定义请求异常的实现。</br>
                         🌿(3)设计本地测试方案，并对整个项目实施完整的本地单元测试。</br>
-                        🌿<b>重要问题与解决方法描述：</b></br>🌿<b>问题：</b>通过 Fabric CA授权加入区块链网络并注册证书后，项目中的对应证书未及时更新，导致Fabric网络无法连通，使得请求无法正常响应。</br>
+                        🌿<b>重要问题与解决方法描述：</b></br>🌿<b>问题：</b>通过 Fabric
+                        CA授权加入区块链网络并注册证书后，项目中的对应证书未及时更新，导致Fabric网络无法连通，使得请求无法正常响应。</br>
                         🌿<b>解决方法：</b>通过Shell脚本实现证书的实时自动更新操作，并将开发后的新功能实时同步更新，保证Fabric网络连通。</br>
                     </p>
                 </div>
