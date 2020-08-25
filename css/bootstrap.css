@@ -1582,14 +1582,15 @@ pre code {
   overflow-y: scroll;
 }
 .container {
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 10px;
+  padding-left: 10px;
   margin-right: auto;
   margin-left: auto;
 }
 @media (min-width: 768px) {
   .container {
-    width: 750px;
+    margin-top: 30px;
+    width: 860px;
   }
 }
 @media (min-width: 992px) {
@@ -2078,7 +2079,7 @@ pre code {
     margin-left: 33.33333333%;
   }
   .col-md-offset-3 {
-    margin-left: 25%;
+    /*margin-left: 25%;*/
   }
   .col-md-offset-2 {
     margin-left: 16.66666667%;

@@ -3,7 +3,7 @@ body {
 	padding: 0;
 	margin: 0;
 	background: #FFF;
-	font-family: 'Yanone Kaffeesatz', sans-serif;
+	/*font-family: 'Yanone Kaffeesatz', sans-serif;*/
 }
 body a {
 	transition: 0.5s all;
@@ -217,7 +217,7 @@ h3.w3l-heading {
     font-weight: bold;
     letter-spacing: 5px;
     border:1px solid #ce7501;
-    width: 15%;
+    width: 216px;
     margin: 0 auto;
     padding: 0.4em;
 }
@@ -673,9 +673,10 @@ span.edu-circle {
 	width:40%;
 }
 .work-right1 {
-    border: 1px dashed #171717;
+    border: 1px dashed #333;
     padding: 1em;
     width: 100%;
+    margin-bottom: 8px;
 }
 .work1 p,.work-right1 p {
     color: #000;
