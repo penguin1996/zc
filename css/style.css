@@ -150,7 +150,7 @@ nav.navbar.navbar-default.navbar-fixed-top.top-nav-collapse {
 }
 /*-- //header --*/ 
 .scroll-down a span{
-	background:url(../images/down.png) no-repeat 0px 0px;
+	/*background:url(../images/down.png) no-repeat 0px 0px;*/
 	height:32px;
 	width:32px;
 	display:inline-block;
