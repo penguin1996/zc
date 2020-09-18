@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="207a7a4d-300e-4d81-b632-d61f2637014f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resume.html" beforeDir="false" afterPath="$PROJECT_DIR$/resume.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,8 +18,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resume.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="389">
-              <caret line="468" column="101" selection-start-line="468" selection-start-column="101" selection-end-line="468" selection-end-column="101" />
+            <state relative-caret-position="10697">
+              <caret line="563" column="89" lean-forward="true" selection-start-line="563" selection-start-column="89" selection-end-line="563" selection-end-column="89" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h3#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -195,12 +194,12 @@
       <workItem from="1598316171782" duration="11204000" />
       <workItem from="1598338859200" duration="10348000" />
       <workItem from="1598686269338" duration="704000" />
-      <workItem from="1598774312874" duration="140000" />
+      <workItem from="1598774312874" duration="1437000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32044000" />
+    <option name="totallyTimeSpent" value="33341000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
@@ -327,8 +326,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resume.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="468" column="101" selection-start-line="468" selection-start-column="101" selection-end-line="468" selection-end-column="101" />
+        <state relative-caret-position="10697">
+          <caret line="563" column="89" lean-forward="true" selection-start-line="563" selection-start-column="89" selection-end-line="563" selection-end-column="89" />
           <folding>
             <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h3#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
