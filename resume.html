@@ -1,34 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>ZC'S-Online-Resume</title>
     <!-- for-mobile-apps -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <meta name="keywords" content=""/>
-    <script type="application/x-javascript"> addEventListener("load", function () {
-        setTimeout(hideURLbar, 0);
-    }, false);
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="" />
+    <script type="application/x-javascript">
+        addEventListener("load", function() {
+            setTimeout(hideURLbar, 0);
+        }, false);
 
-    function hideURLbar() {
-        window.scrollTo(0, 1);
-    } </script>
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
     <!-- //for-mobile-apps -->
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all"/>
-    <link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all" />
     <link rel="stylesheet" href="css/chocolat.css" type="text/css" media="screen">
     <!-- chocolate css for gallery light box-->
     <!-- animation -->
     <link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
     <!-- //animation -->
-    <link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
     <script src="js/jquery-1.11.1.min.js"></script>
     <script src="js/bootstrap.js"></script>
     <script type="text/javascript">
-        jQuery(document).ready(function ($) {
-            $(".scroll").click(function (event) {
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event) {
                 event.preventDefault();
-                $('html,body').animate({scrollTop: $(this.hash).offset().top}, 1000);
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 1000);
             });
         });
     </script>
@@ -41,7 +46,7 @@
             padding: 2em 0;
             /*background: #dbc1af;*/
         }
-
+        
         .progress {
             height: 7px;
             background: #e3e3e3;
@@ -51,7 +56,7 @@
             overflow: visible;
             position: relative;
         }
-
+        
         .progress .progress-title {
             padding: 7px 10px;
             margin: 0;
@@ -67,7 +72,7 @@
             left: 0;
             z-index: 1;
         }
-
+        
         .progress .progress-title:after {
             content: "";
             border-left: 17px solid #393a3d;
@@ -77,7 +82,7 @@
             top: 0;
             right: -17px;
         }
-
+        
         .progress .progress-bar {
             box-shadow: none;
             border-radius: 0;
@@ -85,7 +90,7 @@
             -webkit-animation: animate-positive 2s;
             animation: animate-positive 2s;
         }
-
+        
         .progress .progress-bar:after {
             content: "";
             width: 20px;
@@ -97,7 +102,7 @@
             right: -5px;
             top: -6px;
         }
-
+        
         .progress .progress-value {
             width: 45px;
             height: 30px;
@@ -113,7 +118,7 @@
             bottom: 30px;
             right: -17px;
         }
-
+        
         .progress .progress-value:after {
             content: "";
             border-top: 7px solid #393a3d;
@@ -123,29 +128,29 @@
             bottom: -7px;
             left: 35%;
         }
-
+        
         .progress.green .progress-bar:after {
             border: 5px solid #21da9a;
         }
-
+        
         .progress.pink .progress-bar:after {
             border: 5px solid #ff1170;
         }
-
+        
         .progress.blue .progress-bar:after {
             border: 5px solid #294bdc;
         }
-
+        
         .progress.yellow .progress-bar:after {
             border: 5px solid #ffa900;
         }
-
+        
         @-webkit-keyframes animate-positive {
             0% {
                 width: 0;
             }
         }
-
+        
         @keyframes animate-positive {
             0% {
                 width: 0;
@@ -154,532 +159,585 @@
     </style>
     <!-- //onlinefonts -->
 </head>
+
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-<!-- header -->
-<div class="header-w3layouts">
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <!-- header -->
+    <div class="header-w3layouts">
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                        <span class="sr-only">Vitae</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <h1><a class="navbar-brand" href="resume.html">‍🎓个人简历</a></h1>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-ex1-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                        <li class="hidden">
+                            <a class="page-scroll" href="#page-top"></a>
+                        </li>
+                        <li><a class="page-scroll scroll active" href="#home">📰个人简介</a></li>
+                        <li><a class="page-scroll scroll" href="#about">👦🏻个人信息</a></li>
+                        <li><a class="page-scroll scroll" href="#skill">🛠个人技能</a></li>
+                        <li><a class="page-scroll scroll" href="#exp">💻项目经历</a></li>
+                        <li><a class="page-scroll scroll" href="#port">🥇在校表现</a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+    </div>
+    <!-- //header -->
+    <div class="header jarallax" id="home" style="/* background-image: none; */background-attachment: scroll;/* background-size: auto; */">
         <div class="container">
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                    <span class="sr-only">Vitae</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <h1><a class="navbar-brand" href="resume.html">‍🎓个人简历</a></h1>
+            <div class="banner-text text-center">
+                <h2>✨周丞~Richie✨</h2>
+                <h3> 🌻应聘岗位：java开发工程师🌻 </h3>
+                <p>个人邮箱：penguins1996@163.com&nbsp&nbsp电话：15363385710</p>
             </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden"><a class="page-scroll" href="#page-top"></a></li>
-                    <li><a class="page-scroll scroll active" href="#home">📰个人简介</a></li>
-                    <li><a class="page-scroll scroll" href="#about">👦🏻个人信息</a></li>
-                    <li><a class="page-scroll scroll" href="#skill">🛠个人技能</a></li>
-                    <li><a class="page-scroll scroll" href="#exp">💻项目经历</a></li>
-                    <li><a class="page-scroll scroll" href="#port">🥇在校表现</a></li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
-</div>
-<!-- //header -->
-<div class="header jarallax" id="home"
-     style="/* background-image: none; */background-attachment: scroll;/* background-size: auto; */">
-    <div class="container">
-        <div class="banner-text text-center">
-            <h2>✨周丞~Richie✨</h2>
-            <h3> 🌻应聘岗位：java开发工程师🌻 </h3>
-            <p>个人邮箱：penguins1996@163.com&nbsp&nbsp电话：15363385710</p>
-        </div>
-        <div class="w3-arrow bounce animated">
-            <a href="#about" class="scroll"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
-        </div>
-    </div>
-</div>
-<div class="about" id="about">
-    <div class="container">
-        <h3 class="w3l-heading" style="margin-top: 28px;">👦🏻个人信息</h3>
-        <div class="col-md-4 w3-about-top">
-            <img src="images/zc.jpg" class="img-responsive" alt="about-img"/>
-        </div>
-        <div class="col-md-8 w3l-about">
-            <div class="w3ls-about-info">
-                <p>👨‍🎓学历：本科</br>
-                    📕专业：软件工程</br>
-                    🏫学校：韩山师范学院</br>
-                    📄学信网毕业证编号：105781201905001204</br>
-                    📋学信网学位证编号：1057842019101203</br>
-                    📰博客：<a href="https://blog.csdn.net/calm_encode">CSDN博客</a></br>
-                    📝专业课程：Java程序设计，数据结构，计算机网络，操作系统，计算机组成等<br>
-                    🏢公司：埃森哲(中国)有限公司广州分公司</br>
-                    ⌚工作时间：2019.1~2020.6 (2019.1~2019.6实习) 超过一年</br>
-                    ⌨工作岗位：Java开发工程师
-                </p></div>
-            <div class="w3l-button">
-                <a href="#" data-toggle="modal" data-target="#myModal">👦🏻自我介绍👈(Click)</a>
+            <div class="w3-arrow bounce animated">
+                <a href="#about" class="scroll"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
             </div>
         </div>
     </div>
-    <div class="clearfix"></div>
-</div>
-</div>
-<!-- modal -->
-<div class="modal about-modal fade" id="myModal" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
-                </button>
-                <h4 class="modal-title">👦🏻自我介绍</h4>
+    <div class="about" id="about">
+        <div class="container">
+            <h3 class="w3l-heading" style="margin-top: 28px;">👦🏻个人信息</h3>
+            <div class="col-md-4 w3-about-top">
+                <img src="images/zc.jpg" class="img-responsive" alt="about-img" />
             </div>
-            <div class="modal-body">
-                <div class="about">
-                    <div class="col-md-2 col-sm-2  col-xs-2 about-left ">
-                        <img src="images/zc.jpg" class="img-responsive" alt=""/>
-                    </div>
-                    <div class="col-md-10 col-sm-10 col-xs-10 about-right wthree">
-                        <h4>Hi！ <span>我是周丞,英文名Richie🍎</span></h4>
-                        <h4>💝<b>理想岗位：Java开发工程师</b></h4>
-                        <ul class="address">
-                            <li>
-                                <ul class="agileits-address-text ">
-                                    <li>🎂D.O.B:</li>
-                                    <li>22-12-1995</li>
-                                </ul>
-                            </li>
-                            <li>
-                                <ul class="agileits-address-text">
-                                    <li>📞Phone:</li>
-                                    <li>15363385710</li>
-                                </ul>
-                            </li>
-                            <li>
-                                <ul class="agileits-address-text">
-                                    <li>🏰Addr.:</li>
-                                    <li>浙江省，宁波市.</li>
-                                </ul>
-                            </li>
-                            <li>
-                                <ul class="agileits-address-text">
-                                    <li>📧E-mail:</b></li>
-                                    <li><a href="mailto:example@mail.com"> penguins1996@163.com</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <ul class="agileits-address-text">
-                                    <li>🎉Hobby:</li>
-                                    <li> 🏀篮球，🏃‍♂️跑步，🎵音乐，💪健身</li>
-                                    <li> ✈旅游，📽看电影，✂手工DIY。</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="clearfix"><span></span></div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="agile-border">
-    <span></span>
-</div>
-<!--skill-->
-<div id="skill" class="agile-edu">
-    <div class="container">
-        <h3 class="w3l-heading">🛠个人技能</h3></br></br>
-        <div style="float: left; width: 50%">
-            <div class="demo">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-offset-3 col-md-6">
-                            <div class="progress green">
-                                <h3 class="progress-title">Java</h3>
-                                <div class="progress-bar" style="width:70%; background:#21da9a;">
-                                    <div class="progress-value">70%</div>
-                                </div>
-                            </div>
-                            <div class="progress pink">
-                                <h3 class="progress-title">Redis</h3>
-                                <div class="progress-bar" style="width:60%; background:#ff1170;">
-                                    <div class="progress-value">60%</div>
-                                </div>
-                            </div>
-                            <div class="progress yellow">
-                                <h3 class="progress-title">JVM</h3>
-                                <div class="progress-bar" style="width:50%; background:#ffa900;">
-                                    <div class="progress-value">50%</div>
-                                </div>
-                            </div>
-                            <div class="progress blue">
-                                <h3 class="progress-title">MySQL</h3>
-                                <div class="progress-bar" style="width:65%; background:#264bdc;">
-                                    <div class="progress-value">65%</div>
-                                </div>
-                            </div>
-                            <div class="progress yellow">
-                                <h3 class="progress-title">多线程</h3>
-                                <div class="progress-bar" style="width:50%; background:#ffa900;">
-                                    <div class="progress-value">50%</div>
-                                </div>
-                            </div>
-                            <div class="progress pink">
-                                <h3 class="progress-title">Linux</h3>
-                                <div class="progress-bar" style="width:40%; background:#ff1170;">
-                                    <div class="progress-value">40%</div>
-                                </div>
-                            </div>
-                            <div class="progress green">
-                                <h3 class="progress-title">GC</h3>
-                                <div class="progress-bar" style="width:50%; background:#21da9a;">
-                                    <div class="progress-value">50%</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div style="float: left; width: 50%">
-            <div class="demo">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-offset-3 col-md-6">
-                            <div class="progress green">
-                                <h3 class="progress-title">Spring</h3>
-                                <div class="progress-bar" style="width:65%; background:#21da9a;">
-                                    <div class="progress-value">65%</div>
-                                </div>
-                            </div>
-                            <div class="progress pink">
-                                <h3 class="progress-title">MyBatis</h3>
-                                <div class="progress-bar" style="width:60%; background:#ff1170;">
-                                    <div class="progress-value">60%</div>
-                                </div>
-                            </div>
-                            <div class="progress yellow">
-                                <h3 class="progress-title">区块链</h3>
-                                <div class="progress-bar" style="width:30%; background:#ffa900;">
-                                    <div class="progress-value">30%</div>
-                                </div>
-                            </div>
-                            <div class="progress blue">
-                                <h3 class="progress-title">SpringCloud</h3>
-                                <div class="progress-bar" style="width:50%; background:#264bdc;">
-                                    <div class="progress-value">50%</div>
-                                </div>
-                            </div>
-                            <div class="progress yellow">
-                                <h3 class="progress-title">SpringBoot</h3>
-                                <div class="progress-bar" style="width:60%; background:#ffa900;">
-                                    <div class="progress-value">60%</div>
-                                </div>
-                            </div>
-                            <div class="progress pink">
-                                <h3 class="progress-title">Git</h3>
-                                <div class="progress-bar" style="width:50%; background:#ff1170;">
-                                    <div class="progress-value">50%</div>
-                                </div>
-                            </div>
-                            <div class="progress green">
-                                <h3 class="progress-title">RabbitMQ</h3>
-                                <div class="progress-bar" style="width:40%; background:#21da9a;">
-                                    <div class="progress-value">40%</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!--skill-->
-<div class="agile-border">
-    <span></span>
-</div>
-
-<!-- work-experience-->
-<div id="exp" class="agile-edu exp">
-    <div class="container">
-        <div class="port-head">
-            <h3 class="w3l-heading">💻项目经历</h3></br></br></br>
-        </div>
-        <div class="work-info">
-            <div class="col-md-6  col-sm-6 col-xs-6 work-right1">
-                <div class="col-md-6 col-sm-6 col-xs-6 work2">
-                    <h5>💻实习项目一</h5>
-                </div>
-                <div class="col-md-6  col-sm-6 col-xs-6 work-right1">
-                    <p><b>🌴项目：</b>2019年1月~2019年4月 支付系统的线下支付邮件系统（Offline Payment Engine）</br>
-                        <b>🌴项目框架：</b>Springboot,Jpa,MySQL,Redis,Junit,Maven,使用SOAP协议获取数据。</br>
-                        <b>🌴开发工具：</b>postman,Git,idea,Jenkins,kibana,OpenShit,SourceTree。</br>
-                        <b>🌴项目描述：</b>项目功能流程为用户通过电话与客服沟通进行订票，再确认支付时客服通过该系统查询Api查询到用户需要支付的业务清单，
-                        然后通过邮件生成功能向用户发送一封含有支付链接的邮件，用户通过该链接可以请求支付系统进行支付。</br>🌴<b>注意：</b>此支付链接是有时间限制的，通常设置为12小时或者24小时，邮件会根据不同国家地区的用户设置为不同的语言。</br>
-                        <b>🌴职责描述：</b>通过对项目源码的学习，理清各个微服务之间的联系，然后根据自己的理解在Controller层和service层书写每个模块的单元测试用例,通过单元测试用例的返回结果，找出问题。</br>
-                        <b>🌴重要问题与解决方法描述：</b></br>🌴<b>问题：</b>通过对项目源码的学习，发现有个处理邮件时间的模块会存在多线程问题。</br>
-                        <b>🌴原因：</b>项目中使用了SimpleDateFormat这一个非线程安全的时间类。</br>
-                        <b>🌴解决方法：</b>因为采用的JDK1.8开发，所以用DateTimeFormatter代替了SimpleDateFormat,同时使用Instant代替Date,LocalDateTime代替Calendear,然后对原方法进行重写并将原方法替换掉。</br>
+            <div class="col-md-8 w3l-about">
+                <div class="w3ls-about-info">
+                    <p>👨‍🎓学历：本科</br>
+                        📕专业：软件工程</br>
+                        🏫学校：韩山师范学院</br>
+                        📄学信网毕业证编号：105781201905001204</br>
+                        📋学信网学位证编号：1057842019101203</br>
+                        📰博客：<a href="https://blog.csdn.net/calm_encode">CSDN博客</a></br>
+                        📝专业课程：Java程序设计，数据结构，计算机网络，操作系统，计算机组成等<br> 🏢公司：埃森哲(中国)有限公司广州分公司
+                        </br>
+                        ⌚工作时间：2019.1~2020.6 (2019.1~2019.6实习) 超过一年</br>
+                        ⌨工作岗位：Java开发工程师
                     </p>
                 </div>
-            </div>
-        </div>
-
-        <div class="work-info">
-            <div class="col-md-6  col-sm-6 col-xs-6 work-right1">
-                <div class="col-md-6  col-sm-6 col-xs-6 work2">
-                    <h5>💻实习项目二</h5>
-                </div>
-                <div class="col-md-6  col-sm-6 col-xs-6 work-right1">
-                    <p><b>🌵项目：</b>2019年4月~2019年7月 线上支付系统（Centralized Payment Platform）</br>
-                        <b>🌵项目技术：</b>Springboot,Jpa,MySQL,SpringSecurity,Redis,Maven,Junit,基于Jwt的Token验证,spring-retry,FlyWay,Swagger,logstash日志等技术来实现不同的业务逻辑。</br>
-                        <b>🌵开发工具：</b>postman,idea,Git,Jenkins,kibana,OpenShit,SourceTree,katalon,Jmeter。</br>
-                        <b>🌵项目描述：</b>该项目主要包括Alipay,PayPal,PPS(缴费宝),ApplePay,UnionPay等第三方支付，以及JCB,Visa,Discover,UATP等各地的银行卡支付。</br>
-                        <b>🌵功能流程如下：</b>（1）用户通过购票官网进行订票，或者是购买配套服务以及旅游礼物等，然后通过该系统进行线上支付。</br>
-                        🌵（2）用户通过手机联系购票公司的电话客服进行相同的业务选购之后，客服系统会回复一封用户应该支付的支付清单链接，用户通过该链接来请求该支付系统并进行相应的支付动作。</br>
-                        <b>🌵职责描述：</b>(1)与项目中的同事一起完成支付校验api的实现，通过Hibernate
-                        Validate技术与java的正则表达式的方式对字段进行校验，并且对数据进行RSA加密解密等处理。最后实现用户在成功支付后收到类似支付成功的消息，支付失败后收到支付失败的消息。</br>
-                        🌵(2)使用Katalon功能测试软件，利用Groovy语言编写自动化脚本，对不同的支付功能进行本地测试。</br>
-                        <b>🌵重要问题与解决方法描述：</b></br>🌵<b>问题：</b>（1）数据加密之后的公钥，与私钥的问题。</br>（2）支付校验微服务请求其他微服务的URL拼接问题。</br>
-                        <b>🌵原因：</b>（1）因为公钥是其他微服务生成请求body时提供的，需要使用自己的私钥进行解密然后进行过相应的校验处理。</br>
-                        🌵（2）在进行访问客户端处理时请求的URL实际上是请求其他微服务并且得到相应的数据，但是无法得到该URL的实际参数。</br>
-                        <b>🌵解决方法：</b>（1）通过自己实现一个方法，实现别人的公钥加密，使用自己的私钥解密方法，并且能够得到正确的请求数据body。</br>
-                        🌵（2）将另一个微服务的请求域名，端口等参数信息配置成支付校验服务的一个环境变量，然后通过读取环境变量方式来获取请求URL的参数。
-                    </p>
+                <div class="w3l-button">
+                    <a href="#" data-toggle="modal" data-target="#myModal">👦🏻自我介绍👈(Click)</a>
                 </div>
             </div>
-        </div>
-
-        <div class="work-info">
-            <div class="col-md-6  col-sm-6 col-xs-6 work-right1">
-                <div class="col-md-6  col-sm-6 col-xs-6 work2">
-                    <h5>💻工作项目一</h5>
-                </div>
-                <div class="col-md-6  col-sm-6 col-xs-6 work-right1">
-                    <p>🌳<b>项目：</b>2019年7月~2019年12月 用户登录控制项目（Member Login Control）</br>
-                        🌳<b>项目技术：</b>Springboot,Jpa,MySQL,SpringSecurity,redis,Maven,Junit,基于Jwt的Token验证。</br>
-                        🌳<b>开发工具：</b>postman,idea,Git,Jenkins,kibana,OpenShit。</br>
-                        🌳<b>项目描述：</b>该项目主要实现的是用户登录控制功能</br>
-                        🌳<b>功能流程如下：</b>提供登录接口，当客户端用户和移动端用户执行登录操作，会产生一个用户Token，然后根据该Token对用户进行权限校验，当用户校验通过就能够进行登录。</br>
-                        🌳<b>职责描述：</b>(1)解析用户登录的Token，获取用户的信息，并对用实现该用户的权限控制逻辑，使得用户根据自己的权限获取特定API访问权。</br>
-                        🌳(2)参与用户信息表结构的设计，利用SpringAOP实现将不同接口和数据库方法的请求时间再日志中返回，利用Filter使用户响应展示特定的信息。</br>
-                        🌳<b>重要问题与解决方法描述：</b></br>🌿<b>问题：</b>由于某些表数据过大（几千万条或者上亿条数据），导致查询较慢，即响应时间比较长</br>
-                        🌳<b>解决方法：</b>方法一：利用explain语句分析，合理的使用索引，且实现分库分表，最终还是由于数据量过大，访问速度变化不理想，无法达到毫秒级别。</br>
-                        🌳方法二：在方法一的基础上再按照数据产生的时间和使用的频率，将一些时间比较久而且确定一般不用的数据抽取出数据库另外存储，将数据库中的数据量降低了一个数量级别，使得访问速度提高由原来的秒级别到现在的毫秒级别。
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="work-info">
-            <div class="col-md-6  col-sm-6 col-xs-6 work-right1">
-                <div class="col-md-6  col-sm-6 col-xs-6 work2">
-                    <h5>💻工作项目二</h5>
-                </div>
-                <div class="col-md-6  col-sm-6 col-xs-6 work-right1">
-                    <p>🌿<b>项目：</b>2019年12月~2020年6月 区块链用户积分项目（BlockChain）</br>
-                        🌿<b>项目技术：</b>Springboot,Java,HyperLedger Fabric,CouchDB,MongoDB,Shell,Docker,Gradle,Hiberate
-                        Validate。</br>
-                        🌿<b>开发工具：</b>idea,postman,Git,Ubuntu,Putty。</br>
-                        🌿<b>项目描述：</b>项目会根据用户在商场内的消费额度来计算积分，而且在不同的商场内同一部分积分只能被兑换一次，且被兑换后的内容会被记录并。</br>
-                        🌿<b>功能流程如下：</b>（1）商场通过客户端发起一个积分兑换的活动并提交到后台系统，后台系统进行处理之后会将该请求封装处理成符合Fabric请求格式的数据发送给
-                        Fabric SDK使得请求能通过SDK与智能合约ChainCode进行交互，最终将该商场的活动数据同步到区块链的每个区块中。</br>
-                        🌿（2）用户通过客户端发起一个参加积分兑换的活动的请求并提交到后台系统，后台系统进行处理之后会将该请求封装处理成符合Fabric请求格式的数据发送给
-                        Fabric SDK使得请求能通过SDK与链码（智能合约）ChainCode进行交互，最终将该用户的操作数据同步到区块链的每个区块中。</br>
-                        🌿<b>职责描述：</b>(1)搭建区块链网络，并实现智能合约中某些方法，并进行测试。</br>
-                        🌿(2)基于TDD开发模式，实现用户和商场交互后台业务，对他们提交的数据进行校验，以及自定义请求异常的实现。</br>
-                        🌿(3)设计本地测试方案，并对整个项目实施完整的本地单元测试。</br>
-                        🌿<b>重要问题与解决方法描述：</b></br>🌿<b>问题：</b>通过 Fabric
-                        CA授权加入区块链网络并注册证书后，项目中的对应证书未及时更新，导致Fabric网络无法连通，使得请求无法正常响应。</br>
-                        🌿<b>解决方法：</b>通过Shell脚本实现证书的实时自动更新操作，并将开发后的新功能实时同步更新，保证Fabric网络连通。</br>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!--//work-experience-->
-<div class="agile-border">
-    <span></span>
-</div>
-<!-- Portfolio -->
-<div class="portfolio" id="port">
-    <div class="port-head">
-        <h3 class="w3l-heading">🥇在校表现</h3>
-    </div>
-    <ul class="simplefilter">
-        <li class="active" data-filter="all">All</li>
-        <li data-filter="1">📖学习</li>
-        <li data-filter="2">⛹🏻‍♂️课外</li>
-        <li data-filter="3">🏆证书</li>
-    </ul>
-    <div class="filtr-container">
-        <div class="  filtr-item gallery-t" data-category="1, 3" data-sort="Busy streets">
-            <a href="images/bachelor.png" class="b-link-stripe b-animate-go  thickbox">
-
-                <figure class="w3ls-gallery">
-                    <img src="images/bachelor.png" class="img-responsive" alt=" "/>
-                    <figcaption class="w3layouts-caption">
-                        <h3>🏆学士学位证书</h3>
-                    </figcaption>
-                </figure>
-            </a>
-        </div>
-        <div class=" filtr-item" data-category="1, 3" data-sort="City wonders">
-            <a href="images/graduate.png" class="b-link-stripe b-animate-go  thickbox">
-
-                <figure class="w3ls-gallery">
-                    <img src="images/graduate.png" class="img-responsive" alt=" "/>
-                    <figcaption class="w3layouts-caption">
-                        <h3>🏆毕业证书</h3>
-                    </figcaption>
-                </figure>
-            </a>
-        </div>
-        <div class="  filtr-item gallery-t" data-category="1" data-sort="Busy streets">
-            <a href="images/Caward.png" class="b-link-stripe b-animate-go  thickbox">
-
-                <figure class="w3ls-gallery">
-                    <img src="images/Caward.png" class="img-responsive" alt=" "/>
-                    <figcaption class="w3layouts-caption">
-                        <h3>📖国家励志奖</h3>
-                    </figcaption>
-                </figure>
-            </a>
-        </div>
-        <div class="  filtr-item gallery-t" data-category="1" data-sort="Busy streets">
-            <a href="images/Saward.png" class="b-link-stripe b-animate-go  thickbox">
-
-                <figure class="w3ls-gallery">
-                    <img src="images/Saward.png" class="img-responsive" alt=" "/>
-                    <figcaption class="w3layouts-caption">
-                        <h3>📖优秀学生奖</h3>
-                    </figcaption>
-                </figure>
-            </a>
-        </div>
-        <div class=" filtr-item" data-category="2" data-sort="Luminous night">
-            <a href="images/volleyball.png" class="b-link-stripe b-animate-go  thickbox">
-
-                <figure class="w3ls-gallery">
-                    <img src="images/volleyball.png" class="img-responsive" alt=" "/>
-                    <figcaption class="w3layouts-caption">
-                        <h3>🏐院系排球比赛</h3>
-                    </figcaption>
-                </figure>
-            </a>
-        </div>
-        <div class=" filtr-item" data-category="2" data-sort="Luminous night">
-            <a href="images/tug.png" class="b-link-stripe b-animate-go  thickbox">
-
-                <figure class="w3ls-gallery">
-                    <img src="images/tug.png" class="img-responsive" alt=" "/>
-                    <figcaption class="w3layouts-caption">
-                        <h3>🏋️‍♂️院系拔河比赛</h3>
-                    </figcaption>
-                </figure>
-            </a>
-        </div>
-        <div class="  filtr-item" data-category="3" data-sort="In production">
-            <a href="images/qualification.png" class="b-link-stripe b-animate-go  thickbox">
-
-                <figure class="w3ls-gallery">
-                    <img src="images/qualification.png" class="img-responsive" alt=" "/>
-                    <figcaption class="w3layouts-caption">
-                        <h3>🏆软考证书</h3>
-                    </figcaption>
-                </figure>
-            </a>
-        </div>
-        <div class=" filtr-item" data-category="3" data-sort="Industrial site">
-            <a href="images/CET4.png" class="b-link-stripe b-animate-go  thickbox">
-
-                <figure class="w3ls-gallery">
-                    <img src="images/CET4.png" class="img-responsive" alt=" "/>
-                    <figcaption class="w3layouts-caption">
-                        <h3>🏆四级证书</h3>
-                    </figcaption>
-                </figure>
-            </a>
-        </div>
-        <div class=" filtr-item" data-category="2" data-sort="Peaceful lake">
-            <a href="images/sport.png" class="b-link-stripe b-animate-go  thickbox">
-
-                <figure class="w3ls-gallery">
-                    <img src="images/sport.png" class="img-responsive" alt=" "/>
-                    <figcaption class="w3layouts-caption">
-                        <h3>🥇🥈🥉比赛奖牌</h3>
-                    </figcaption>
-                </figure>
-            </a>
-        </div>
-        <div class="  filtr-item gallery-t" data-category="1" data-sort="Busy streets">
-            <a href="images/grade.png" class="b-link-stripe b-animate-go  thickbox">
-
-                <figure class="w3ls-gallery">
-                    <img src="images/grade.png" class="img-responsive" alt=" "/>
-                    <figcaption class="w3layouts-caption">
-                        <h3>📃大学成绩单</h3>
-                    </figcaption>
-                </figure>
-            </a>
-        </div>
-        <div class="  filtr-item gallery-t" data-category="1" data-sort="Busy streets">
-            <a href="images/soft.png" class="b-link-stripe b-animate-go  thickbox">
-
-                <figure class="w3ls-gallery">
-                    <img src="images/soft.png" class="img-responsive" alt=" "/>
-                    <figcaption class="w3layouts-caption">
-                        <h3>🖱惠林杯软件设计大赛</h3>
-                    </figcaption>
-                </figure>
-            </a>
         </div>
         <div class="clearfix"></div>
     </div>
-</div>
-<!-- //Portfolio -->
-<!-- footer -->
-<div class="agileits_w3layouts-footer text-center">
-    <div class="container">
-        <h2><a href="resume.html">🌱周丞🌲Richie🌳的个人在线简历🌾</a></h2>
     </div>
-</div>
-<!-- //footer -->
-<!-- //contact -->
-<!-- PopUp-Box-JavaScript -->
-<script src="js/jquery.chocolat.js"></script>
-<script type="text/javascript">
-    $(function () {
-        $('.filtr-item a').Chocolat();
-    });
-</script>
-<!-- //PopUp-Box-JavaScript -->
-<!-- fliter-JavaScript -->
-<script src="js/jquery.filterizr.js"></script>
-<script src="js/controls.js"></script>
-<script type="text/javascript">
-    $(function () {
-        $('.filtr-container').filterizr();
-    });
-</script>
-<!-- //fliter-JavaScript -->
-<script src="js/jarallax.js"></script>
-<script src="js/SmoothScroll.min.js"></script>
-<script type="text/javascript">
-    /* init Jarallax */
-    $('.jarallax').jarallax({
-        speed: 0.5,
-        imgWidth: 1366,
-        imgHeight: 768
-    })
-</script>
-<!-- start-smoth-scrolling -->
-<script type="text/javascript" src="js/easing.js"></script>
-<!-- //here ends scrolling icon -->
+    <!-- modal -->
+    <div class="modal about-modal fade" id="myModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title">👦🏻自我介绍</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="about">
+                        <div class="col-md-2 col-sm-2  col-xs-2 about-left ">
+                            <img src="images/zc.jpg" class="img-responsive" alt="" />
+                        </div>
+                        <div class="col-md-10 col-sm-10 col-xs-10 about-right wthree">
+                            <h4>Hi！ <span>我是周丞,英文名Richie🍎</span></h4>
+                            <h4>💝<b>理想岗位：Java开发工程师</b></h4>
+                            <ul class="address">
+                                <li>
+                                    <ul class="agileits-address-text ">
+                                        <li>🎂D.O.B:</li>
+                                        <li>22-12-1995</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul class="agileits-address-text">
+                                        <li>📞Phone:</li>
+                                        <li>15363385710</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul class="agileits-address-text">
+                                        <li>🏰Addr.:</li>
+                                        <li>浙江省，杭州市，西湖区.</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul class="agileits-address-text">
+                                        <li>📧E-mail:</b>
+                                        </li>
+                                        <li><a href="mailto:example@mail.com"> penguins1996@163.com</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul class="agileits-address-text">
+                                        <li>🎉Hobby:</li>
+                                        <li> 🏀篮球，🏃‍♂️跑步，🎵音乐，💪健身</li>
+                                        <li> ✈旅游，📽看电影，✂手工DIY。</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="clearfix"><span></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="agile-border">
+        <span></span>
+    </div>
+    <!--skill-->
+    <div id="skill" class="agile-edu">
+        <div class="container">
+            <h3 class="w3l-heading">🛠个人技能</h3>
+            </br>
+            </br>
+            <div style="float: left; width: 50%">
+                <div class="demo">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-offset-3 col-md-6">
+                                <div class="progress green">
+                                    <h3 class="progress-title">Java</h3>
+                                    <div class="progress-bar" style="width:70%; background:#21da9a;">
+                                        <div class="progress-value">70%</div>
+                                    </div>
+                                </div>
+                                <div class="progress pink">
+                                    <h3 class="progress-title">Redis</h3>
+                                    <div class="progress-bar" style="width:60%; background:#ff1170;">
+                                        <div class="progress-value">60%</div>
+                                    </div>
+                                </div>
+                                <div class="progress yellow">
+                                    <h3 class="progress-title">JVM</h3>
+                                    <div class="progress-bar" style="width:50%; background:#ffa900;">
+                                        <div class="progress-value">50%</div>
+                                    </div>
+                                </div>
+                                <div class="progress blue">
+                                    <h3 class="progress-title">MySQL</h3>
+                                    <div class="progress-bar" style="width:65%; background:#264bdc;">
+                                        <div class="progress-value">65%</div>
+                                    </div>
+                                </div>
+                                <div class="progress yellow">
+                                    <h3 class="progress-title">多线程</h3>
+                                    <div class="progress-bar" style="width:50%; background:#ffa900;">
+                                        <div class="progress-value">50%</div>
+                                    </div>
+                                </div>
+                                <div class="progress pink">
+                                    <h3 class="progress-title">Linux</h3>
+                                    <div class="progress-bar" style="width:40%; background:#ff1170;">
+                                        <div class="progress-value">40%</div>
+                                    </div>
+                                </div>
+                                <div class="progress green">
+                                    <h3 class="progress-title">GC</h3>
+                                    <div class="progress-bar" style="width:50%; background:#21da9a;">
+                                        <div class="progress-value">50%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="float: left; width: 50%">
+                <div class="demo">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-offset-3 col-md-6">
+                                <div class="progress green">
+                                    <h3 class="progress-title">Spring</h3>
+                                    <div class="progress-bar" style="width:65%; background:#21da9a;">
+                                        <div class="progress-value">65%</div>
+                                    </div>
+                                </div>
+                                <div class="progress pink">
+                                    <h3 class="progress-title">MyBatis</h3>
+                                    <div class="progress-bar" style="width:60%; background:#ff1170;">
+                                        <div class="progress-value">60%</div>
+                                    </div>
+                                </div>
+                                <div class="progress yellow">
+                                    <h3 class="progress-title">区块链</h3>
+                                    <div class="progress-bar" style="width:30%; background:#ffa900;">
+                                        <div class="progress-value">30%</div>
+                                    </div>
+                                </div>
+                                <div class="progress blue">
+                                    <h3 class="progress-title">SpringCloud</h3>
+                                    <div class="progress-bar" style="width:50%; background:#264bdc;">
+                                        <div class="progress-value">50%</div>
+                                    </div>
+                                </div>
+                                <div class="progress yellow">
+                                    <h3 class="progress-title">SpringBoot</h3>
+                                    <div class="progress-bar" style="width:60%; background:#ffa900;">
+                                        <div class="progress-value">60%</div>
+                                    </div>
+                                </div>
+                                <div class="progress pink">
+                                    <h3 class="progress-title">Git</h3>
+                                    <div class="progress-bar" style="width:50%; background:#ff1170;">
+                                        <div class="progress-value">50%</div>
+                                    </div>
+                                </div>
+                                <div class="progress green">
+                                    <h3 class="progress-title">RabbitMQ</h3>
+                                    <div class="progress-bar" style="width:40%; background:#21da9a;">
+                                        <div class="progress-value">40%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--skill-->
+    <div class="agile-border">
+        <span></span>
+    </div>
+
+    <!-- work-experience-->
+    <div id="exp" class="agile-edu exp">
+        <div class="container">
+            <div class="port-head">
+                <h3 class="w3l-heading">💻工作经历一</h3>
+            </div>
+            <div class="port-head">
+                <h4 class="w3l-heading"><b>🏢公司：埃森哲(中国)有限公司广州分公司</b></h4>
+                </br>
+                </br>
+                </br>
+            </div>
+            <div class="work-info">
+                <div class="col-md-6  col-sm-6 col-xs-6 work-right1">
+                    <div class="col-md-6 col-sm-6 col-xs-6 work2">
+                        <h5>💻实习项目一</h5>
+                    </div>
+                    <div class="col-md-6  col-sm-6 col-xs-6 work-right1">
+                        <p><b>🌴项目：</b>2019年1月~2019年4月 支付系统的线下支付邮件系统（Offline Payment Engine）</br>
+                            <b>🌴项目框架：</b>Springboot,Jpa,MySQL,Redis,Junit,Maven,使用SOAP协议获取数据。</br>
+                            <b>🌴开发工具：</b>postman,Git,idea,Jenkins,kibana,OpenShit,SourceTree。</br>
+                            <b>🌴项目描述：</b>项目功能流程为用户通过电话与客服沟通进行订票，再确认支付时客服通过该系统查询Api查询到用户需要支付的业务清单， 然后通过邮件生成功能向用户发送一封含有支付链接的邮件，用户通过该链接可以请求支付系统进行支付。
+                            </br>🌴<b>注意：</b>此支付链接是有时间限制的，通常设置为12小时或者24小时，邮件会根据不同国家地区的用户设置为不同的语言。</br>
+                            <b>🌴职责描述：</b>通过对项目源码的学习，理清各个微服务之间的联系，然后根据自己的理解在Controller层和service层书写每个模块的单元测试用例,通过单元测试用例的返回结果，找出问题。</br>
+                            <b>🌴重要问题与解决方法描述：</b></br>🌴<b>问题：</b>通过对项目源码的学习，发现有个处理邮件时间的模块会存在多线程问题。</br>
+                            <b>🌴原因：</b>项目中使用了SimpleDateFormat这一个非线程安全的时间类。</br>
+                            <b>🌴解决方法：</b>因为采用的JDK1.8开发，所以用DateTimeFormatter代替了SimpleDateFormat,同时使用Instant代替Date,LocalDateTime代替Calendear,然后对原方法进行重写并将原方法替换掉。</br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="work-info">
+                <div class="col-md-6  col-sm-6 col-xs-6 work-right1">
+                    <div class="col-md-6  col-sm-6 col-xs-6 work2">
+                        <h5>💻实习项目二</h5>
+                    </div>
+                    <div class="col-md-6  col-sm-6 col-xs-6 work-right1">
+                        <p><b>🌵项目：</b>2019年4月~2019年7月 线上支付系统（Centralized Payment Platform）</br>
+                            <b>🌵项目技术：</b>Springboot,Jpa,MySQL,SpringSecurity,Redis,Maven,Junit,基于Jwt的Token验证,spring-retry,FlyWay,Swagger,logstash日志等技术来实现不同的业务逻辑。</br>
+                            <b>🌵开发工具：</b>postman,idea,Git,Jenkins,kibana,OpenShit,SourceTree,katalon,Jmeter。</br>
+                            <b>🌵项目描述：</b>该项目主要包括Alipay,PayPal,PPS(缴费宝),ApplePay,UnionPay等第三方支付，以及JCB,Visa,Discover,UATP等各地的银行卡支付。</br>
+                            <b>🌵功能流程如下：</b>（1）用户通过购票官网进行订票，或者是购买配套服务以及旅游礼物等，然后通过该系统进行线上支付。</br>
+                            🌵（2）用户通过手机联系购票公司的电话客服进行相同的业务选购之后，客服系统会回复一封用户应该支付的支付清单链接，用户通过该链接来请求该支付系统并进行相应的支付动作。</br>
+                            <b>🌵职责描述：</b>(1)与项目中的同事一起完成支付校验api的实现，通过Hibernate Validate技术与java的正则表达式的方式对字段进行校验，并且对数据进行RSA加密解密等处理。最后实现用户在成功支付后收到类似支付成功的消息，支付失败后收到支付失败的消息。
+                            </br>
+                            🌵(2)使用Katalon功能测试软件，利用Groovy语言编写自动化脚本，对不同的支付功能进行本地测试。</br>
+                            <b>🌵重要问题与解决方法描述：</b></br>🌵<b>问题：</b>（1）数据加密之后的公钥，与私钥的问题。</br>（2）支付校验微服务请求其他微服务的URL拼接问题。</br>
+                            <b>🌵原因：</b>（1）因为公钥是其他微服务生成请求body时提供的，需要使用自己的私钥进行解密然后进行过相应的校验处理。</br>
+                            🌵（2）在进行访问客户端处理时请求的URL实际上是请求其他微服务并且得到相应的数据，但是无法得到该URL的实际参数。</br>
+                            <b>🌵解决方法：</b>（1）通过自己实现一个方法，实现别人的公钥加密，使用自己的私钥解密方法，并且能够得到正确的请求数据body。</br>
+                            🌵（2）将另一个微服务的请求域名，端口等参数信息配置成支付校验服务的一个环境变量，然后通过读取环境变量方式来获取请求URL的参数。
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="work-info">
+                <div class="col-md-6  col-sm-6 col-xs-6 work-right1">
+                    <div class="col-md-6  col-sm-6 col-xs-6 work2">
+                        <h5>💻工作项目一</h5>
+                    </div>
+                    <div class="col-md-6  col-sm-6 col-xs-6 work-right1">
+                        <p>🌳<b>项目：</b>2019年7月~2019年12月 用户登录控制项目（Member Login Control）</br>
+                            🌳<b>项目技术：</b>Springboot,Jpa,MySQL,SpringSecurity,redis,Maven,Junit,基于Jwt的Token验证。</br>
+                            🌳<b>开发工具：</b>postman,idea,Git,Jenkins,kibana,OpenShit。</br>
+                            🌳<b>项目描述：</b>该项目主要实现的是用户登录控制功能</br>
+                            🌳<b>功能流程如下：</b>提供登录接口，当客户端用户和移动端用户执行登录操作，会产生一个用户Token，然后根据该Token对用户进行权限校验，当用户校验通过就能够进行登录。</br>
+                            🌳<b>职责描述：</b>(1)解析用户登录的Token，获取用户的信息，并对用实现该用户的权限控制逻辑，使得用户根据自己的权限获取特定API访问权。</br>
+                            🌳(2)参与用户信息表结构的设计，利用SpringAOP实现将不同接口和数据库方法的请求时间再日志中返回，利用Filter使用户响应展示特定的信息。</br>
+                            🌳<b>重要问题与解决方法描述：</b></br>🌿<b>问题：</b>由于某些表数据过大（几千万条或者上亿条数据），导致查询较慢，即响应时间比较长</br>
+                            🌳<b>解决方法：</b>方法一：利用explain语句分析，合理的使用索引，且实现分库分表，最终还是由于数据量过大，访问速度变化不理想，无法达到毫秒级别。</br>
+                            🌳方法二：在方法一的基础上再按照数据产生的时间和使用的频率，将一些时间比较久而且确定一般不用的数据抽取出数据库另外存储，将数据库中的数据量降低了一个数量级别，使得访问速度提高由原来的秒级别到现在的毫秒级别。
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="work-info">
+                <div class="col-md-6  col-sm-6 col-xs-6 work-right1">
+                    <div class="col-md-6  col-sm-6 col-xs-6 work2">
+                        <h5>💻工作项目二</h5>
+                    </div>
+                    <div class="col-md-6  col-sm-6 col-xs-6 work-right1">
+                        <p>🌿<b>项目：</b>2019年12月~2020年6月 区块链用户积分项目（BlockChain）</br>
+                            🌿<b>项目技术：</b>Springboot,Java,HyperLedger Fabric,CouchDB,MongoDB,Shell,Docker,Gradle,Hiberate Validate。
+                            </br>
+                            🌿<b>开发工具：</b>idea,postman,Git,Ubuntu,Putty。</br>
+                            🌿<b>项目描述：</b>项目会根据用户在商场内的消费额度来计算积分，而且在不同的商场内同一部分积分只能被兑换一次，且被兑换后的内容会被记录并。</br>
+                            🌿<b>功能流程如下：</b>（1）商场通过客户端发起一个积分兑换的活动并提交到后台系统，后台系统进行处理之后会将该请求封装处理成符合Fabric请求格式的数据发送给 Fabric SDK使得请求能通过SDK与智能合约ChainCode进行交互，最终将该商场的活动数据同步到区块链的每个区块中。</br>
+                            🌿（2）用户通过客户端发起一个参加积分兑换的活动的请求并提交到后台系统，后台系统进行处理之后会将该请求封装处理成符合Fabric请求格式的数据发送给 Fabric SDK使得请求能通过SDK与链码（智能合约）ChainCode进行交互，最终将该用户的操作数据同步到区块链的每个区块中。</br>
+                            🌿<b>职责描述：</b>(1)搭建区块链网络，并实现智能合约中某些方法，并进行测试。</br>
+                            🌿(2)基于TDD开发模式，实现用户和商场交互后台业务，对他们提交的数据进行校验，以及自定义请求异常的实现。</br>
+                            🌿(3)设计本地测试方案，并对整个项目实施完整的本地单元测试。</br>
+                            🌿<b>重要问题与解决方法描述：</b></br>🌿<b>问题：</b>通过 Fabric CA授权加入区块链网络并注册证书后，项目中的对应证书未及时更新，导致Fabric网络无法连通，使得请求无法正常响应。
+                            </br>
+                            🌿<b>解决方法：</b>通过Shell脚本实现证书的实时自动更新操作，并将开发后的新功能实时同步更新，保证Fabric网络连通。</br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </br>
+        </br>
+        </br>
+        <div class="container">
+            <div class="port-head">
+                <h3 class="w3l-heading" style="font-size: 2em;"><b>💻工作经历二</b></h3>
+            </div>
+
+            <div class="port-head">
+                <h4 class="w3l-heading"><b>🏢公司：杭州轻山科技有限公司</b></h4>
+                </br>
+                </br>
+                </br>
+            </div>
+
+            <div class="work-info">
+                <div class="col-md-6  col-sm-6 col-xs-6 work-right1">
+                    <div class="col-md-6  col-sm-6 col-xs-6 work2">
+                        <h5>💻工作项目一</h5>
+                    </div>
+                    <div class="col-md-6  col-sm-6 col-xs-6 work-right1">
+                        <p><b>🌵项目：</b>2021年2月~2022年6月 哇印定制（WaYinPrint）</br>
+                            <b>🌵项目技术：</b>Springboot,MyBatisPlus,MySQL,Redis,Maven,Junit,zookeeper,rabbitMQ 基于Jwt的Token验证,logback日志等技术来实现不同的业务逻辑。
+                            </br>
+                            <b>🌵开发工具：</b>postman,idea,Git,Jenkins,SourceTree。</br>
+                            <b>🌵项目描述：</b>该项目主要包括Alipay，微信支付，图片合成。</br>
+                            <b>🌵功能流程如下：</b>（1）用户通过购票官网进行订票，或者是购买配套服务以及旅游礼物等，然后通过该系统进行线上支付。</br>
+                            🌵（2）用户通过手机联系购票公司的电话客服进行相同的业务选购之后，客服系统会回复一封用户应该支付的支付清单链接，用户通过该链接来请求该支付系统并进行相应的支付动作。</br>
+                            <b>🌵职责描述：</b>(1)与项目中的同事一起完成支付校验api的实现，通过Hibernate Validate技术与java的正则表达式的方式对字段进行校验，并且对数据进行RSA加密解密等处理。最后实现用户在成功支付后收到类似支付成功的消息，支付失败后收到支付失败的消息。
+                            </br>
+                            🌵(2)使用Katalon功能测试软件，利用Groovy语言编写自动化脚本，对不同的支付功能进行本地测试。</br>
+                            <b>🌵重要问题与解决方法描述：</b></br>🌵<b>问题：</b>（1）数据加密之后的公钥，与私钥的问题。</br>（2）支付校验微服务请求其他微服务的URL拼接问题。</br>
+                            <b>🌵原因：</b>（1）因为公钥是其他微服务生成请求body时提供的，需要使用自己的私钥进行解密然后进行过相应的校验处理。</br>
+                            🌵（2）在进行访问客户端处理时请求的URL实际上是请求其他微服务并且得到相应的数据，但是无法得到该URL的实际参数。</br>
+                            <b>🌵解决方法：</b>（1）通过自己实现一个方法，实现别人的公钥加密，使用自己的私钥解密方法，并且能够得到正确的请求数据body。</br>
+                            🌵（2）将另一个微服务的请求域名，端口等参数信息配置成支付校验服务的一个环境变量，然后通过读取环境变量方式来获取请求URL的参数。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--//work-experience-->
+    <div class="agile-border">
+        <span></span>
+    </div>
+    <!-- Portfolio -->
+    <div class="portfolio" id="port">
+        <div class="port-head">
+            <h3 class="w3l-heading">🥇在校表现</h3>
+        </div>
+        <ul class="simplefilter">
+            <li class="active" data-filter="all">All</li>
+            <li data-filter="1">📖学习</li>
+            <li data-filter="2">⛹🏻‍♂️课外</li>
+            <li data-filter="3">🏆证书</li>
+        </ul>
+        <div class="filtr-container">
+            <div class="  filtr-item gallery-t" data-category="1, 3" data-sort="Busy streets">
+                <a href="images/bachelor.png" class="b-link-stripe b-animate-go  thickbox">
+
+                    <figure class="w3ls-gallery">
+                        <img src="images/bachelor.png" class="img-responsive" alt=" " />
+                        <figcaption class="w3layouts-caption">
+                            <h3>🏆学士学位证书</h3>
+                        </figcaption>
+                    </figure>
+                </a>
+            </div>
+            <div class=" filtr-item" data-category="1, 3" data-sort="City wonders">
+                <a href="images/graduate.png" class="b-link-stripe b-animate-go  thickbox">
+
+                    <figure class="w3ls-gallery">
+                        <img src="images/graduate.png" class="img-responsive" alt=" " />
+                        <figcaption class="w3layouts-caption">
+                            <h3>🏆毕业证书</h3>
+                        </figcaption>
+                    </figure>
+                </a>
+            </div>
+            <div class="  filtr-item gallery-t" data-category="1" data-sort="Busy streets">
+                <a href="images/Caward.png" class="b-link-stripe b-animate-go  thickbox">
+
+                    <figure class="w3ls-gallery">
+                        <img src="images/Caward.png" class="img-responsive" alt=" " />
+                        <figcaption class="w3layouts-caption">
+                            <h3>📖国家励志奖</h3>
+                        </figcaption>
+                    </figure>
+                </a>
+            </div>
+            <div class="  filtr-item gallery-t" data-category="1" data-sort="Busy streets">
+                <a href="images/Saward.png" class="b-link-stripe b-animate-go  thickbox">
+
+                    <figure class="w3ls-gallery">
+                        <img src="images/Saward.png" class="img-responsive" alt=" " />
+                        <figcaption class="w3layouts-caption">
+                            <h3>📖优秀学生奖</h3>
+                        </figcaption>
+                    </figure>
+                </a>
+            </div>
+            <div class=" filtr-item" data-category="2" data-sort="Luminous night">
+                <a href="images/volleyball.png" class="b-link-stripe b-animate-go  thickbox">
+
+                    <figure class="w3ls-gallery">
+                        <img src="images/volleyball.png" class="img-responsive" alt=" " />
+                        <figcaption class="w3layouts-caption">
+                            <h3>🏐院系排球比赛</h3>
+                        </figcaption>
+                    </figure>
+                </a>
+            </div>
+            <div class=" filtr-item" data-category="2" data-sort="Luminous night">
+                <a href="images/tug.png" class="b-link-stripe b-animate-go  thickbox">
+
+                    <figure class="w3ls-gallery">
+                        <img src="images/tug.png" class="img-responsive" alt=" " />
+                        <figcaption class="w3layouts-caption">
+                            <h3>🏋️‍♂️院系拔河比赛</h3>
+                        </figcaption>
+                    </figure>
+                </a>
+            </div>
+            <div class="  filtr-item" data-category="3" data-sort="In production">
+                <a href="images/qualification.png" class="b-link-stripe b-animate-go  thickbox">
+
+                    <figure class="w3ls-gallery">
+                        <img src="images/qualification.png" class="img-responsive" alt=" " />
+                        <figcaption class="w3layouts-caption">
+                            <h3>🏆软考证书</h3>
+                        </figcaption>
+                    </figure>
+                </a>
+            </div>
+            <div class=" filtr-item" data-category="3" data-sort="Industrial site">
+                <a href="images/CET4.png" class="b-link-stripe b-animate-go  thickbox">
+
+                    <figure class="w3ls-gallery">
+                        <img src="images/CET4.png" class="img-responsive" alt=" " />
+                        <figcaption class="w3layouts-caption">
+                            <h3>🏆四级证书</h3>
+                        </figcaption>
+                    </figure>
+                </a>
+            </div>
+            <div class=" filtr-item" data-category="2" data-sort="Peaceful lake">
+                <a href="images/sport.png" class="b-link-stripe b-animate-go  thickbox">
+
+                    <figure class="w3ls-gallery">
+                        <img src="images/sport.png" class="img-responsive" alt=" " />
+                        <figcaption class="w3layouts-caption">
+                            <h3>🥇🥈🥉比赛奖牌</h3>
+                        </figcaption>
+                    </figure>
+                </a>
+            </div>
+            <div class="  filtr-item gallery-t" data-category="1" data-sort="Busy streets">
+                <a href="images/grade.png" class="b-link-stripe b-animate-go  thickbox">
+
+                    <figure class="w3ls-gallery">
+                        <img src="images/grade.png" class="img-responsive" alt=" " />
+                        <figcaption class="w3layouts-caption">
+                            <h3>📃大学成绩单</h3>
+                        </figcaption>
+                    </figure>
+                </a>
+            </div>
+            <div class="  filtr-item gallery-t" data-category="1" data-sort="Busy streets">
+                <a href="images/soft.png" class="b-link-stripe b-animate-go  thickbox">
+
+                    <figure class="w3ls-gallery">
+                        <img src="images/soft.png" class="img-responsive" alt=" " />
+                        <figcaption class="w3layouts-caption">
+                            <h3>🖱惠林杯软件设计大赛</h3>
+                        </figcaption>
+                    </figure>
+                </a>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <!-- //Portfolio -->
+    <!-- footer -->
+    <div class="agileits_w3layouts-footer text-center">
+        <div class="container">
+            <h2><a href="resume.html">🌱周丞🌲Richie🌳的个人在线简历🌾</a></h2>
+        </div>
+    </div>
+    <!-- //footer -->
+    <!-- //contact -->
+    <!-- PopUp-Box-JavaScript -->
+    <script src="js/jquery.chocolat.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $('.filtr-item a').Chocolat();
+        });
+    </script>
+    <!-- //PopUp-Box-JavaScript -->
+    <!-- fliter-JavaScript -->
+    <script src="js/jquery.filterizr.js"></script>
+    <script src="js/controls.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $('.filtr-container').filterizr();
+        });
+    </script>
+    <!-- //fliter-JavaScript -->
+    <script src="js/jarallax.js"></script>
+    <script src="js/SmoothScroll.min.js"></script>
+    <script type="text/javascript">
+        /* init Jarallax */
+        $('.jarallax').jarallax({
+            speed: 0.5,
+            imgWidth: 1366,
+            imgHeight: 768
+        })
+    </script>
+    <!-- start-smoth-scrolling -->
+    <script type="text/javascript" src="js/easing.js"></script>
+    <!-- //here ends scrolling icon -->
 </body>
+
 </html>
